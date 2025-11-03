@@ -268,28 +268,33 @@ pip install editdistance
 
 ## 使用教程
 
+**下载mmpencil数据集**
+
+放置在mmPencil_dataset/mmWave/目录下
+
 ### 第一步：数据预处理（信号→频谱图）
 
 **脚本说明：** 第一个代码文件负责将原始毫米波信号转换为频谱图热图。
 
-```bash
-# 运行FFT转换
-cd NWPU_AIoT_Laboratory/
-python spectrogram-based_recognition/01_signal_to_heatmap.py
-```
-
 **输入数据格式：**
 ```
 mmPencil_dataset/mmWave/
-├── 200-Word/
-│   ├── User-01/
-│   │   ├── word1/
+├── User-01/
+├── User-02/
+│   ├── 200-Word/
+│   │   ├── about/
 │   │   │   ├── w01.npy
 │   │   │   ├── w02.npy
 │   │   │   └── ...
 │   │   └── ...
 │   └── ...
 └── ...
+```
+
+```bash
+# 运行FFT转换
+cd NWPU_AIoT_Laboratory/
+python spectrogram-based_recognition/01_signal_to_heatmap.py
 ```
 
 **输出数据格式：**
