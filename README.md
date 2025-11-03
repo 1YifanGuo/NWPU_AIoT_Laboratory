@@ -1,5 +1,6 @@
 # 基于mmPencil数据集的智能物联网实验课程
 > 代码地址（github）：https://github.com/1YifanGuo/NWPU_AIoT_Laboratory
+
 > 数据集地址（kaggle）：https://www.kaggle.com/datasets/mmpencil/mmpencil-dataset/data
 ***
 ## 目录
@@ -541,7 +542,7 @@ if __name__ == '__main__':
 - 未见用户实验（用户1-2数据训练，用户3-4数据测试）：**单词准确率：58.25%、字母准确率: 86.05%** *（难度⭐⭐⭐⭐）*
 - 未见单词实验（测试集单词未包含在训练集中）：**单词准确率: 38.58%, 字母准确率: 76.26%** *（难度⭐⭐⭐⭐⭐）*
 
-> 方案一教程在：NWPU_AIoT_Laboratory/spectrogram-based_recognition/README.md
+> 方案一教程在：[spectrogram-based_recognition/README.md](https://github.com/1YifanGuo/NWPU_AIoT_Laboratory/blob/main/spectrogram-based_recognition/README.md)
 ***
 
 
@@ -590,7 +591,7 @@ if __name__ == '__main__':
 - 未见用户实验（用户1-2数据训练，用户3-4数据测试）：**单词准确率：65.25% →69.00%（语言模型纠正后）** 
 - 未见单词实验（测试集单词未包含在训练集中）：**单词准确率: 49.92% → 54.50%（语言模型纠正后）** 
 
-> 方案二教程在：
+> 方案二教程在：[trajectory-based_recognition/README.md](https://github.com/1YifanGuo/NWPU_AIoT_Laboratory/blob/main/trajectory-based_recognition/README.md)
 ***
 
 ### 💡 3.3 方案三：信号 → 轨迹图像 → 视觉语言模型单词识别（UbiComp‘25） <a id="3.3"></a>
