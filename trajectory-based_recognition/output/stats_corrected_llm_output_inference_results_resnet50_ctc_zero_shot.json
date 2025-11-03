@@ -1,0 +1,14 @@
+{
+  "total_samples": 1200,
+  "original_correct": 599,
+  "corrected_correct": 654,
+  "original_accuracy": 0.49916666666666665,
+  "corrected_accuracy": 0.545,
+  "accuracy_improvement": 0.04583333333333339,
+  "improved_samples": 55,
+  "degraded_samples": 0,
+  "net_improvement": 55,
+  "model_path": "/home/gyf/models/Qwen3-0.6B",
+  "batch_size": 256,
+  "temperature": 0.0
+}

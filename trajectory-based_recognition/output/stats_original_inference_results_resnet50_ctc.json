@@ -1,0 +1,9 @@
+{
+  "stage": "original_ctc",
+  "total_samples": 800,
+  "correct_samples": 725,
+  "word_accuracy": 0.90625,
+  "character_accuracy": 0.9713064713064713,
+  "average_edit_distance": 0.1175,
+  "model_type": "resnet_ctc"
+}
