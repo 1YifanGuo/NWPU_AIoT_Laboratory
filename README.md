@@ -595,29 +595,9 @@ if __name__ == '__main__':
 ***
 
 ### 💡 3.3 方案三：信号 → 轨迹图像 → 视觉语言模型单词识别（UbiComp‘25） <a id="3.3"></a>
-![](images/m2VLMs.png)
-简单来说，我们将所有毫米波原始数据映射为视觉图片，在8*A100 GPU集群上**指令微调**了现有SOTA视觉语言模型（阿里云的Qwen2-VL-7B、LLaVA-NeXT-7B、GOT-OCR-0.5B）。指令提示词如下：
-```
-<image> Here is a picture containing a handwriting word.
-Please identify the word in the image.
-Ensure that your output is a correctly spelled English word.
-Note: Only provide the word itself, without any additional content or explanation.
-```
-
-此外，我们还尝试了Deepseek-R1中使用的**强化微调**技术，挖掘视觉语言模型对未见单词的零样本识别能力。强化微调提示词如下：
-```
-Here is a picture containing a handwritten word.
-Please identify the word in the image.
-Output the thinking process in <think> </think> and final answer in <answer> </answer> tags.
-The output answer format should be as follows:
-<think> ... </think> <answer>a correctly spelled English word</answer>
-Please strictly follow the format.
-```
-
-视觉语言模型在强化微调中**涌现**出的推理能力：
-![](images/zero_shot.png)
 
 > 项目地址（github）：https://github.com/1YifanGuo/mmPencil
+
 > 论文地址（ACM）：https://dl.acm.org/doi/10.1145/3749504  🔗[备用链接](https://www.researchgate.net/profile/Yifan-Guo-61/publication/395263539_mmPencil_Toward_Writing-Style-Independent_In-Air_Handwriting_Recognition_via_mmWave_Radar_and_Large_Vision-Language_Model/links/68e101e9d221a404b2a561bf/mmPencil-Toward-Writing-Style-Independent-In-Air-Handwriting-Recognition-via-mmWave-Radar-and-Large-Vision-Language-Model.pdf)
 
 ***
