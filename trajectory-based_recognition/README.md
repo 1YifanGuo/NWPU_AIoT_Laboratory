@@ -283,6 +283,13 @@ pip install vllm
 
 ## 使用教程
 
+**下载代码库**
+
+```bash
+git clone https://github.com/1YifanGuo/NWPU_AIoT_Laboratory.git
+cd NWPU_AIoT_Laboratory/
+```
+
 **下载mmpencil数据集**
 
 放置在mmPencil_dataset/mmWave/目录下
@@ -308,7 +315,6 @@ mmPencil_dataset/mmWave/
 
 ```bash
 # 运行轨迹重建
-cd NWPU_AIoT_Laboratory/
 python trajectory-based_recognition/01_signal_to_trajectory.py
 ```
 
