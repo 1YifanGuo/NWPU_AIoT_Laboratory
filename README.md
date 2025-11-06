@@ -1,4 +1,4 @@
-# 基于mmPencil数据集的智能物联网实验课程
+# 基于mmPencil数据集的智能感知实验
 > 代码地址（github）：https://github.com/1YifanGuo/NWPU_AIoT_Laboratory
 
 > 数据集地址（kaggle）：https://www.kaggle.com/datasets/mmpencil/mmpencil-dataset/data
